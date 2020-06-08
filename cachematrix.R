@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+##Takes a matrix as an argument and creates a vector of functions able to store
+##the matrix and its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inv<- NULL
   set<-function(y){
@@ -17,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+##Takes a makeCacheMatrix Vector as an argument, computes the inverse of the 
+##matrix or returns the stored inverse if available
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getinv()
